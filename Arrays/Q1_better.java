@@ -9,63 +9,54 @@
 
     Explanation: Since matrix[2][2]=0.Therfore the 2nd column and 2nd row wil be set to 0.
 
+    Approach : Better 
+
+    Time Complexity: O(2*(N*M)), where N = no. of rows in the matrix and M = no. of columns in the matrix.
+    We are traversing the entire matrix 2 times and each traversal is taking O(N*M) time complexity
+
+    Space Complexity: O(N) + O(M), where N = no. of rows in the matrix and M = no. of columns in the matrix.
+
     Reference: https://takeuforward.org/data-structure/set-matrix-zero/
+
 
  */
 
 import java.util.*;
 
-public class Q1{
+public class Q1_better {
 
-    static void markRow(ArrayList<ArrayList<Integer>> matrix, int n, int m, int i){
+    static ArrayList<ArrayList<Integer>> zeroMatrix(ArrayList<ArrayList<Integer>> matrix, int n, int m){
+
+        int[] row = new int[n]; // row array
+        int[] col = new int[m]; // column array
         
-        // set all non-zero elements as -1 in the row i:
-        for(int j=0; j<m; j++){
-            if(matrix.get(i).get(j) != 0){
-                matrix.get(i).set(j, -1);
-            }
-        }
-
-    }
-
-    static void markColumn(ArrayList<ArrayList<Integer>> matrix, int n, int m, int j){
-
-        // set all non-zero elements as -1 in the column j:
+        // traverse the matrix
         for(int i=0; i<n; i++){
-            if(matrix.get(i).get(j) != 0){
-                matrix.get(i).set(j, -1);
-            }
-        }
-    }
-
-
-    static ArrayList<ArrayList<Integer>> zeromatrix(ArrayList<ArrayList<Integer>> matrix, int n, int m){
-
-        // Set -1 for rows and cols that contains 0. Don't mark any 0 as -1
-        for(int i=0; i<n; i++){
-            for(int j=0; j<n; j++){
+            for(int j=0; j<m; j++){
                 if(matrix.get(i).get(j) == 0){
-                    markRow(matrix, n, m, i);
-                    markColumn(matrix, n, m, j);
+                    // mark ith index of row wih 1
+                    row[i] = 1;
+
+                    // mark jth index of col wih 1
+                    col[j] = 1;
                 }
             }
         }
-
-        // Finally, mark all -1 as 0:
+        
+        // Finally, mark all (i, j) as 0, if row[i] or col[j] is marked with 1.
         for(int i=0; i<n; i++){
             for(int j=0; j<m; j++){
-                if(matrix.get(i).get(j) == -1){
+                if(row[i] == 1 || col[j] == 1){
                     matrix.get(i).set(j, 0);
                 }
             }
         }
 
         return matrix;
-        
     }
+    
 
     public static void main(String[] args){
-        System.err.println("Hello world!");
 
         // The code snippet you provided declares an ArrayList named matrix, where each element in the ArrayList is itself an ArrayList of integers
         ArrayList<ArrayList<Integer>> matrix = new ArrayList<>();
@@ -77,7 +68,7 @@ public class Q1{
         int n = matrix.size(); // number of rows
         int m = matrix.get(0).size(); // number of columns
 
-        ArrayList<ArrayList<Integer>> answer = zeromatrix(matrix, n, m);
+        ArrayList<ArrayList<Integer>> answer = zeroMatrix(matrix, n, m);
 
         System.out.println("Final matrix is : ");
 
@@ -92,4 +83,5 @@ public class Q1{
 
         // So, the nested for loop is responsible for iterating through each element in the 2D ArrayList answer and printing it to the console in a row-by-row fashion. The outer loop iterates through rows, and the inner loop iterates through elements in each row.
     }
+
 }
