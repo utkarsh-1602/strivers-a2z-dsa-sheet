@@ -9,6 +9,8 @@
 
     Explanation: Since matrix[2][2]=0.Therfore the 2nd column and 2nd row wil be set to 0.
 
+    Reference: https://takeuforward.org/data-structure/set-matrix-zero/
+
  */
 
 import java.util.*;
