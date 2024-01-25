@@ -7,7 +7,12 @@
 
     Output: 1 4 6 4 1
 
-    Explanation: Formula for Calculating the nCr is : n! / (r! * (n-r)!)
+    Explanation: 
+    (refer Explaination_screenshots)
+    Formula to print nth row: 
+    ans = 1
+    ans = ans * (row - col) 
+    ans = ans / col
 
     Approach : Optimal 
 
