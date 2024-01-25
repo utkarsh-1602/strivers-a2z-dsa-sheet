@@ -6,3 +6,6 @@
 
 ### ArrayList of ArrayList 
 - An ArrayList of ArrayList in Java is a data structure where you have an ArrayList that contains elements, and each element of the outer ArrayList is itself an ArrayList. This is often used to represent a two-dimensional structure, like a matrix or a list of lists.
+
+### Pascal's Triangle 
+- Pascal's Triangle is a triangular array of numbers where each number is the sum of the two numbers directly above it.
