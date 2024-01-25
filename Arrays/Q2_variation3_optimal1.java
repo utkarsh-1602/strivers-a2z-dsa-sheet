@@ -22,11 +22,11 @@
 
  */
 
-public class Q2_variation3_bruteforce {
+public class Q2_variation3_optimal1 {
 
     static void pascalTriangle(int n){
 
-        int ans = 1;
+        long ans = 1;
 
         System.out.print(ans + " ");
 
