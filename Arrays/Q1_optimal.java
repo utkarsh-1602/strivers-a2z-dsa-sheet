@@ -26,8 +26,6 @@ public class Q1_optimal {
 
     static ArrayList<ArrayList<Integer>> zeroMatrix(ArrayList<ArrayList<Integer>> matrix, int n, int m){
 
-        // int[] row = new int[n]; --> matrix[..][0]
-        // int[] col = new int[m]; --> matrix[0][..]
         int col0 = 1;
 
         // step 1: Traverse the matrix and
@@ -44,7 +42,7 @@ public class Q1_optimal {
                         matrix.get(0).set(j, 0);
                     }
                     else{
-                        col0 = 0;
+                        col0 = 0; // if j is 0, then we mark the col0 as 0 
                     }
 
                 }
@@ -53,8 +51,8 @@ public class Q1_optimal {
         }
 
         // Step 2: Mark with 0 from (1,1) to (n-1, m-1):
-        for(int i=0; i<n; i++){
-            for(int j=0; j<m; j++){
+        for(int i=1; i<n; i++){
+            for(int j=1; j<m; j++){
                 if(matrix.get(i).get(j) != 0){
                     // check for col and row 
                     if(matrix.get(i).get(0) == 0 || matrix.get(0).get(j) == 0){
@@ -85,7 +83,6 @@ public class Q1_optimal {
 
 
     public static void main(String[] args) {
-        System.err.println("Hello world!");
 
         // The code snippet you provided declares an ArrayList named matrix, where each element in the ArrayList is itself an ArrayList of integers
         ArrayList<ArrayList<Integer>> matrix = new ArrayList<>();
