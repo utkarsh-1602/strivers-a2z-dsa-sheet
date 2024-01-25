@@ -7,7 +7,11 @@
 
     Output: 6
 
-    Explanation: The element at position (r,c) is: 6
+    Explanation: 
+    
+    We can separately calculate n!, r!, (n-r)! and using their values we can calculate nCr. This is an extremely naive way to calculate.
+    Formula for Calculating the nCr is : n! / (r! * (n-r)!)
+    The element at position (r,c) is: 6
 
     Approach : BruteForce 
 
@@ -25,7 +29,6 @@
 public class Q2_variation1_bruteforce {
 
 
-    // We can separately calculate n!, r!, (n-r)! and using their values we can calculate nCr. This is an extremely naive way to calculate.
     static int factorial(int n){
 
         if(n == 1 || n == 0) return 1;
