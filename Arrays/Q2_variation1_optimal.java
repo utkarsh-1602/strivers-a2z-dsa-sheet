@@ -16,7 +16,7 @@
 
     Approach : BruteForce 
 
-    Time Complexity: O(r)
+    Time Complexity: O(C) where c is column number
 
     Space Complexity: O(1) as we are not using any extra space. 
 
