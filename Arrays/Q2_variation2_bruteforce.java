@@ -7,7 +7,7 @@
 
     Output: 1 4 6 4 1
 
-    Explanation: Formula for Calculating the nCr is : n! / (r! * (n-r)!)
+    Explanation: Formula for Calculating the nCr is : n! / (r! * (n-r)!), from this formula we are printing each element of the entire row 
 
     Approach : BruteForce 
 
