@@ -15,8 +15,7 @@
 
     Time Complexity: O(N*log(N)), sort() function takes the time complexity of O(N*log(N)
 
-    Space Complexity: O(N), The Arrays.sort method in Java uses a variant of the merge sort algorithm, which requires additional space for merging the subarrays during the sorting process.
-
+    Space Complexity: O(1)
 
     Reference:https://takeuforward.org/data-structure/find-the-largest-element-in-an-array/
 
