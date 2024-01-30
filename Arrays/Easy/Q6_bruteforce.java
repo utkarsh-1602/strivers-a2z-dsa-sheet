@@ -21,7 +21,7 @@
     Reference: https://takeuforward.org/data-structure/rotate-array-by-k-elements/
 
  */
-public class Q6_optimal {
+public class Q6_bruteforce {
 
     public static void rotateByKElements(int[] arr, int k){
 
