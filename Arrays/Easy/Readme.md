@@ -9,3 +9,12 @@ Arrays. sort uses dual-pivot Quicksort on primitives. It offers O(n log(n)) perf
 - As it implements the Set Interface, duplicate values are not allowed.
 - Objects that you insert in HashSet are not guaranteed to be inserted in the same order. Objects are inserted based on their hash code.
 - NULL elements are allowed in HashSet
+
+### XOR (exclusive OR)
+
+- XOR, or exclusive OR, is a logical operation that outputs true only when the number of true inputs is odd. 
+- In java XOR is often represented using the caret (^) symbol.
+
+- Two important properties of XOR are the following:
+    XOR of two same numbers is always 0 i.e. a ^ a = 0. ←Property 1.
+    XOR of a number with 0 will result in the number itself i.e. 0 ^ a = a.  ←Property 2
