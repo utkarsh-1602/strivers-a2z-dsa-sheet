@@ -41,11 +41,44 @@ public class Q8_optimal {
 
         while(i < n && j < m){
 
-            if(arr1[i] == arr2[j]){
-               list.add(arr1[i]); 
-            }
+            if(arr1[i] <= arr2[j]){
 
+                // we know the array is sorted, so because of that we are checking if the last element in the list is not equal to the current element or not 
+                if(list.size() == 0 || list.get(list.size() - 1) != arr1[i]){
+                    list.add(arr1[i]);
+                }
+                i++;
+                
+            }
+            else{
+                if(list.size() == 0 || list.get(list.size() - 1) != arr2[i]){
+                    list.add(arr2[i]);
+                }
+                j++;
+            }
+            
         }
+
+
+        // if any element left in arr 1
+        while (i < n) {
+            if(list.get(list.size() - 1) != arr1[i]){
+                list.add(arr1[i]);
+            }
+            i++;
+        }
+
+        // if any element left in arr 2
+
+        while(j < m){
+            if(list.get(list.size() - 1) != arr2[j]){
+                list.add(arr2[j]);
+            }
+            j++;
+        }
+
+
+        System.out.println(list);
 
     }
 
