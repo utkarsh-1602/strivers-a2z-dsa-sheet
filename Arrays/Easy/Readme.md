@@ -20,6 +20,6 @@ Arrays. sort uses dual-pivot Quicksort on primitives. It offers O(n log(n)) perf
     XOR of a number with 0 will result in the number itself i.e. 0 ^ a = a.  ←Property 2
 
 
-# Hashmap 
+### Hashmap 
 - HashMap in Java stores the data in (Key, Value) pairs, and you can access them by an index of another type (e.g. an Integer). One object is used as a key (index) to another object (value). If you try to insert the duplicate key in HashMap, it will replace the element of the corresponding key.
 `HashMap<String, Integer> map = new HashMap<>(); `
