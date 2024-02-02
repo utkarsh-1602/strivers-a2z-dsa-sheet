@@ -7,49 +7,40 @@
     Result: 3
     Explanation: In the given array, number 3 is missing. So, 3 is the answer.
 
-    Approach : bruteforce  
+    Approach : better  
 
-    Time Complexity: O(N^2)
+    Time Complexity: 
 
-    Space Complexity: O(1)
+    Space Complexity:
 
     Reference: https://takeuforward.org/arrays/find-the-missing-number-in-an-array/
 
  */ 
 
-public class Q9_bruteforce {
-    
+public class Q9_better{
+
     static int missingElement(int[] arr, int N){
 
-        // Outer loop that runs from 1 to N
+        int[] arr2 = new int[N+1]; // 6
+        for(int i=0; i<N-1; i++){
+            arr2[arr[i]]++;
+        }
+
         for(int i=1; i<=N; i++){
-            // flag variable to check if an element exists
-            int flag = 0;
-
-            // search the element using linear search 
-            for(int j=0; j<N-1; j++){
-                if(arr[j] == i){
-                    // element is present
-                    flag = 1;
-                    break; 
-                }
+            if(arr2[i] == 0){
+                return i;
             }
-
-            // check if the element is missing 
-            // i.e flag = 0
-            if(flag == 0) return i;
         }
 
         return -1;
-
     }
 
+
     public static void main(String[] args) {
-        
+
         int N = 7;
         int[] arr = {1,2,3,4,6,7};
         int ans = missingElement(arr, N);
         System.out.println(ans);
     }
-
 }
