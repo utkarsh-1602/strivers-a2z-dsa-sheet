@@ -10,7 +10,7 @@
     Approach : bruteforce
     As we know we need to find the longest subarray, we can create two loops and check every possibility for each element to be a subarray, and will save the sum of each subarray, and will check whether the sum we stored is maxSum or not using Math.max
 
-    Time Complexity: O(N)
+    Time Complexity: O(N^2)
 
     Space Complexity: O(1)
 
