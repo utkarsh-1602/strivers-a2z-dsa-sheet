@@ -9,9 +9,9 @@
 
     Approach : better (using hashing)
 
-    Time Complexity:
+    Time Complexity: O(N*logN)
 
-    Space Complexity: 
+    Space Complexity: O(N)
 
     Reference: https://takeuforward.org/data-structure/longest-subarray-with-given-sum-k/
 
