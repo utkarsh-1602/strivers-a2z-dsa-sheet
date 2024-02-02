@@ -18,3 +18,8 @@ Arrays. sort uses dual-pivot Quicksort on primitives. It offers O(n log(n)) perf
 - Two important properties of XOR are the following:
     XOR of two same numbers is always 0 i.e. a ^ a = 0. ←Property 1.
     XOR of a number with 0 will result in the number itself i.e. 0 ^ a = a.  ←Property 2
+
+
+# Hashmap 
+- HashMap in Java stores the data in (Key, Value) pairs, and you can access them by an index of another type (e.g. an Integer). One object is used as a key (index) to another object (value). If you try to insert the duplicate key in HashMap, it will replace the element of the corresponding key.
+`HashMap<String, Integer> map = new HashMap<>(); `
