@@ -9,9 +9,9 @@
 
     Approach : better  
 
-    Time Complexity: 
+    Time Complexity: O(2N), two times traversal of the array
 
-    Space Complexity:
+    Space Complexity: O(N)
 
     Reference: https://takeuforward.org/arrays/find-the-missing-number-in-an-array/
 
