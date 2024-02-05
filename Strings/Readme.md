@@ -17,3 +17,23 @@
 - The toCharArray() method is a built-in function in Java that allows you to convert a string into a character array. This method is available in the String class and provides a convenient way to convert each character in a string into an element of an array.
 - Since strings in Java are immutable, converting them to a character array can be useful when you need to modify individual characters.
 - The toCharArray() method creates a new character array, which requires additional memory. This can be a concern if you are working with large strings.
+
+### subString 
+- In Java, Substring is a part of a String or can be said subset of the String. There are two variants of the substring() method.
+
+                public String substring(int startIndex)
+                public String substring(int startIndex, int endIndex)
+
+- for example, 
+
+                String s = 'abcde'
+                // then substring of string s will be: 
+                System.out.print(s.substring(0, 4)); 
+                
+In the example, we have put the `0th index`, and `last index` i.e `4`, from `a to e`, but it will print : `abcd`. it won't include last index.
+
+
+### Stack 
+- In Java, a stack is a data structure that follows the **Last In, First Out (LIFO) principle**, where the last element added is the first one to be removed. The java.util package provides a Stack class that implements a stack.
+
+                
