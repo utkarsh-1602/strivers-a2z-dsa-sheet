@@ -15,8 +15,8 @@ package Strings;
 
     Approach : optimal 
     
-    Time Complexity:
-    Space Complexity: 
+    Time Complexity: O(N)
+    Space Complexity: O(N)
 
     Reference: https://leetcode.com/problems/remove-outermost-parentheses/description/
 
@@ -54,7 +54,7 @@ public class Q1_optimal2 {
 
     public static void main(String[] args) {
            
-        String s = "( ( ) ( ) ) (())(()(()))";
+        String s = "(()())(())(()(()))";
         // count = 0
         // x = 1
         // y = 5 
