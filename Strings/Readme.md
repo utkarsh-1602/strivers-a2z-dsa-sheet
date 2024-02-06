@@ -4,6 +4,7 @@
 - Strings in Java are immutable, meaning their values cannot be changed after they are created. Once a String object is created, you cannot modify its content.
 - If you need a mutable sequence of characters, you can use StringBuilder or StringBuffer in Java, which provide a mutable buffer for constructing strings. These classes allow you to append, insert, or modify the content of the sequence.
 
+
 ### StringBuilder 
 - StringBuilder is mutable, meaning you can modify its contents without creating a new object.
 - **constructors in Java StringBuilder Class**: 
@@ -36,4 +37,11 @@ In the example, we have put the `0th index`, and `last index` i.e `4`, from `a t
 ### Stack 
 - In Java, a stack is a data structure that follows the **Last In, First Out (LIFO) principle**, where the last element added is the first one to be removed. The java.util package provides a Stack class that implements a stack.
 
-                
+### Character to Integer Conversion
+Character to Integer Conversion refers to the process of converting a character representation to its corresponding integer value, typically based on the ASCII or Unicode encoding standards.
+
+                int intValue = (int) 'a'; // Converts the character 'a' to its ASCII integer value (97).
+
+                String s = '5';
+                int intValue = (int) s.charAt(0); // Converts the character '5' to its ASCII integer value (53).
+

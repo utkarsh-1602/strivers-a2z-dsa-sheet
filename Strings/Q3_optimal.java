@@ -19,8 +19,8 @@
 
     Approach : optimal 
     
-    Time Complexity: 
-    Space Complexity: 
+    Time Complexity: O(N)
+    Space Complexity: O(1)
 
     Reference: https://leetcode.com/problems/largest-odd-number-in-string/description/
 
@@ -35,8 +35,22 @@ public class Q3_optimal {
 
     static String largestOddNumberInString(String s){
 
-        
+        int n = s.length();
 
+        // if the last character is odd then return the string as it is 
+        if((int)s.charAt(n-1) % 2 == 1){
+            return s; 
+        }
+
+        int i = n-1;
+        while(i >= 0){
+            if(s.charAt(i) % 2 == 1){
+                return s.substring(0, i+1);
+            }
+            i--;
+        }
+
+        return "";
     }
 
     public static void main(String[] args) {
