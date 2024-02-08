@@ -51,3 +51,6 @@ Character to Integer Conversion refers to the process of converting a character 
                 String s = '5';
                 int intValue = (int) s.charAt(0); // Converts the character '5' to its ASCII integer value (53).
 
+
+### What is Anagram ? 
+- An anagram is a word or phrase formed by rearranging the letters of another word or phrase. In other words, if you can rearrange the letters of one word or phrase to spell another word or phrase, they are considered anagrams of each other.
