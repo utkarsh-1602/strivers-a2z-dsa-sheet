@@ -3,6 +3,12 @@
 ### Strings 
 - Strings in Java are immutable, meaning their values cannot be changed after they are created. Once a String object is created, you cannot modify its content.
 - If you need a mutable sequence of characters, you can use StringBuilder or StringBuffer in Java, which provide a mutable buffer for constructing strings. These classes allow you to append, insert, or modify the content of the sequence.
+- **indexOf()** : The indexOf() method returns the position of the first occurrence of specified character(s) in a string. There are 4 indexOf() methods:
+
+                public int indexOf(String str)
+                public int indexOf(String str, int fromIndex)
+                public int indexOf(int char)
+                public int indexOf(int char, int fromIndex)
 
 
 ### StringBuilder 
