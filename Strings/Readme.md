@@ -54,3 +54,13 @@ Character to Integer Conversion refers to the process of converting a character 
 
 ### What is Anagram ? 
 - An anagram is a word or phrase formed by rearranging the letters of another word or phrase. In other words, if you can rearrange the letters of one word or phrase to spell another word or phrase, they are considered anagrams of each other.
+
+### Characters in Unicode Values 
+-  In Java, characters are represented as Unicode values.
+- Unicode is a universal character encoding standard that assigns a unique code point (numeric value) to each character in most of the world's writing systems.
+- for example, The character 'A' has a Unicode value of 65, 'B' has 66, 'C' has 67, and so on. So, when we do C - A, it effectively calculates the offset of the character 'C' from 'A'.
+- Here's how it works:
+
+                'C' - 'A' = 67 - 65 = 2
+                'A' - 'A' = 65 - 65 = 0
+                'T' - 'A' = 84 - 65 = 19
