@@ -1,4 +1,4 @@
-package sortingAlgorithms.selectionSort;
+package sorting_Algorithms.selection_sort;
 
 import java.util.Arrays;
 
@@ -17,7 +17,7 @@ import java.util.Arrays;
     Output: 1,2,3,4,5
     Explanation: After sorting the array is: 1, 2, 3, 4, 5
 
-    Time Complexity:  O(N2), (where N = size of the array), for the best, worst, and average cases.
+    Time Complexity:  O(N^2), (where N = size of the array), for the best, worst, and average cases.
     Space Complexity:  O(1), as we are not using any extra space 
 
     Reference: https://takeuforward.org/sorting/selection-sort-algorithm/
@@ -27,17 +27,19 @@ import java.util.Arrays;
 
 public class Q1 {
 
-    static void selection_sort(int[] arr){
+    static void selectionSort(int[] arr){
     
         int n = arr.length;
 
+        // traversing the array
         for(int i=0; i<arr.length; i++){
 
+            // for the first time, getting the 0th index as min, in future we will store the index of minimum element in min variable
             int min = i;
 
-            for(int j=i+1; j<n; j++){
+            for(int j=i+1; j<n; j++){ // for every index we are checking if that element is smaller or greater than others elements, and if greater we will swap it with smaller element to sort the array 
 
-                if(arr[j] < arr[min]){
+                if(arr[j] < arr[min]){  
                     min = j;
                 }
             }
@@ -53,7 +55,7 @@ public class Q1 {
     public static void main(String args[]) {
 
         int[] arr = {13, 46, 24, 52, 20, 9};
-        selection_sort(arr);
+        selectionSort(arr);
     }
 
 }
