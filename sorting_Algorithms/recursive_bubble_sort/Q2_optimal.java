@@ -18,9 +18,9 @@ package sorting_Algorithms.recursive_bubble_sort;
 
     Approach: Optimal (Only use if the array is sorted)
 
-    Time complexity: 
-    
+    Time complexity: O(N), only if the array is already sorted
     Space Complexity: O(N)
+    
     Reference: https://takeuforward.org/arrays/recursive-bubble-sort-algorithm/
 
  */
