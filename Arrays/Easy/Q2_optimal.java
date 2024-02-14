@@ -11,11 +11,11 @@
 
     Approach : Optimal
 
-    Time Complexity: 
+    Time Complexity: O(N)
 
-    Space Complexity: 
+    Space Complexity: O(1)
 
-    Reference: 
+    Reference: https://takeuforward.org/data-structure/find-second-smallest-and-second-largest-element-in-an-array/
 
  */
 
