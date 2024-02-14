@@ -15,7 +15,7 @@
     Similarly, we would find the largest element which is just smaller than the largest element we just found
     Indeed, this is our second smallest and second largest element.
 
-    Time Complexity: O(2N), as we are traversing the array 2 times
+    Time Complexity: O(2N) => O(N) (excluding the constants), and as we are traversing the array 2 times
 
     Space Complexity: O(1)
 
