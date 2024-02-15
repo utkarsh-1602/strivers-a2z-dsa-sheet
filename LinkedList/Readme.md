@@ -10,6 +10,7 @@
 
 # Understanding the difference between Node and Node*
 ![Node Pointer](node_pointer.png)
+
 A node refers to the structure that contains data and the pointer to the next node. In contrast, Node* (Node pointer) specifically denotes a pointer variable that stores the address of the Node it is pointing to.
 
 # Applications of Linked Lists
