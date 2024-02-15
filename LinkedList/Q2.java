@@ -1,5 +1,7 @@
 package LinkedList;
 
+// Create a Node pointer to the LinkedList
+
 class Node {
     int data;
     Node next;
@@ -15,7 +17,7 @@ class Node {
     }
 }
 
-public class Q2_node_pointer {
+public class Q2 {
     public static void main(String[] args) {
 
         int[] arr = {2, 5, 8, 7};

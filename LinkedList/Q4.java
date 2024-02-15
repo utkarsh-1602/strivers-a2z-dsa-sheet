@@ -37,7 +37,7 @@ class Node {
     }
 }
 
-public class Q4_deleteLastNode {
+public class Q4 {
 
 
     static Node deleteTail(Node head){

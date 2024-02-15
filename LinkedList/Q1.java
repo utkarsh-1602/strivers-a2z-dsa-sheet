@@ -1,5 +1,7 @@
 package LinkedList;
 
+// Create a new LinkedList
+
 class Node {
     int data; // the data value
     Node next; // the reference to the next Node in the linked list
@@ -18,7 +20,7 @@ class Node {
 
 }
 
-public class Q1_creating_LinkedList{
+public class Q1{
     public static void main(String[] args) {
         int[] arr = {2, 5, 8, 7};
 

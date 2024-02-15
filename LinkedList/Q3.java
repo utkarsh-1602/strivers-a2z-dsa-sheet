@@ -47,7 +47,7 @@ class ListNode{
 
 }
 
-public class Q3_inserting_node_linkedList {
+public class Q3 {
 
 
     static void printList(ListNode head){
