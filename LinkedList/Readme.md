@@ -18,3 +18,13 @@ A node refers to the structure that contains data and the pointer to the next no
 - **Dynamic Memory Allocation**: Dynamic memory allocation relies on linked lists to manage and allocate memory blocks efficiently.
 - **Web Browser** is one important application of Linked List.
 
+# Types of Linked Lists
+
+1. Singly Linked Lists
+In a singly linked list, each node points to the next node in the sequence. Traversal is straightforward but limited to moving in one direction, from the head to the tail.
+
+2. Doubly Linked Lists
+In this each node points to both the next node and the previous node, thus allowing it for bidirectional connectivity.
+
+3. Circular Linked Lists
+In a circular linked list, the last node points back to the head node, forming a closed loop.
