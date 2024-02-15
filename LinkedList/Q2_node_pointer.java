@@ -15,7 +15,7 @@ class Node {
     }
 }
 
-public class node_pointer {
+public class Q2_node_pointer {
     public static void main(String[] args) {
 
         int[] arr = {2, 5, 8, 7};

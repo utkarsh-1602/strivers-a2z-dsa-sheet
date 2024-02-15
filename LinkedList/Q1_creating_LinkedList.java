@@ -18,7 +18,7 @@ class Node {
 
 }
 
-public class creating_LinkedList{
+public class Q1_creating_LinkedList{
     public static void main(String[] args) {
         int[] arr = {2, 5, 8, 7};
 
