@@ -11,3 +11,9 @@
 # Understanding the difference between Node and Node*
 A node refers to the structure that contains data and the pointer to the next node. In contrast, Node* (Node pointer) specifically denotes a pointer variable that stores the address of the Node it is pointing to.
 ![Node Pointer](node_pointer.png)
+
+# Applications of Linked Lists
+- **Creating Data Structures**: Linked lists serve as the foundation for building other dynamic data structures, such as stacks and queues.
+- **Dynamic Memory Allocation**: Dynamic memory allocation relies on linked lists to manage and allocate memory blocks efficiently.
+- **Web Browser** is one important application of Linked List.
+
