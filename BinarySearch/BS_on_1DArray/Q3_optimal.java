@@ -15,7 +15,7 @@ package BinarySearch.BS_on_1DArray;
     Result: 4
     Explanation: Index 4 is the smallest index such that arr[4] > x.
 
-    Approach : bruteforce (using linear search)
+    Approach : optimal  
 
     Time Complexity:  O(N), where N = size of the given array.
     Reason: In the worst case, we have to travel the whole array. This is basically the time complexity of the linear search algorithm.
@@ -27,7 +27,7 @@ package BinarySearch.BS_on_1DArray;
  */
 
 
-public class Q3_bruteforce {
+public class Q3_optimal {
 
     static int upperBound(int[] arr, int x){
 
