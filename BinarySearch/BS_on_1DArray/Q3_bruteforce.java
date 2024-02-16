@@ -15,18 +15,36 @@ package BinarySearch.BS_on_1DArray;
     Result: 4
     Explanation: Index 4 is the smallest index such that arr[4] > x.
 
-    Approach : optimal  
+    Approach : bruteforce  
 
-    Time Complexity: O(logN), where N = size of the given array.
-    Reason: We are basically using the Binary Search algorithm.
+    Time Complexity:  O(N), where N = size of the given array.
+    Reason: In the worst case, we have to travel the whole array. This is basically the time complexity of the linear search algorithm.
 
-    Space Complexity: O(1) as we are using no extra space.
+    Space Complexity: O(1), as we are not using any extra space
 
-    Reference: https://takeuforward.org/arrays/implement-lower-bound-bs-2/
+    Reference: https://takeuforward.org/arrays/implement-upper-bound/
 
  */
 
 
 public class Q3_bruteforce {
-    
+
+    static int upperBound(int[] arr, int x){
+
+        int n = arr.length;
+
+        for(int i = 0; i < n; i++){
+            if(arr[i] > x) return i; 
+        }
+
+        return n; 
+    }
+
+    public static void main(String[] args) {
+        
+        int[] arr ={1,2,2,3}; 
+        int x = 2;
+
+        System.out.println(upperBound(arr, x));
+    }   
 }
