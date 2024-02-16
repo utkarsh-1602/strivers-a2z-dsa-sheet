@@ -11,7 +11,7 @@ package BinarySearch.BS_on_1DArray;
 
     Explanation: 6 is at index 2 
 
-    Approach : Iterative 
+    Approach : recursive  
 
     Time Complexity: O(logN), where N = size of the given array.
     In the algorithm, in every step, we are basically dividing the search space into 2 equal halves. This is actually equivalent to dividing the size of the array by 2, every time. After a certain number of divisions, the size will reduce to such an extent that we will not be able to divide that anymore and the process will stop. The number of total divisions will be equal to the time complexity.
@@ -22,36 +22,30 @@ package BinarySearch.BS_on_1DArray;
 
     Space Complexity: O(1)
 
-    Reference: https://takeuforward.org/data-structure/set-matrix-zero/
+    Reference: https://takeuforward.org/data-structure/binary-search-explained/
 
 
  */
 
+public class Q1_recursive {
+    
 
-public class Q1 {
+    static int recursiveBinarySearch(int[] arr, int start, int end, int target){
 
-    static int binarySearch(int[] arr, int target){
+        // The base case of the recursion will be start > end. If (start > end), the search space becomes invalid which means the target is not present in the array
+        if(start > end) return -1;
 
-        int start = 0;
-        int end = arr.length - 1;
+        int mid = start + (end - start) / 2;
 
-        while(start <= end){
+        if(arr[mid] == target) return mid;
 
-            int mid = start + (end-start) / 2;
-
-            if(arr[mid] == target) return mid;
-
-            if(arr[mid] > target){
-                end = mid - 1;
-            }
-
-            if(arr[mid] < target){
-                start = mid + 1;
-            }
+        else if(arr[mid] > target){
+            return recursiveBinarySearch(arr, start, mid-1, target);
         }
 
-        return -1;
-
+        else {
+            return recursiveBinarySearch(arr, mid+1, end, target);
+        }
     }
 
     public static void main(String[] args) {
@@ -59,7 +53,8 @@ public class Q1 {
         int[] arr = {3, 4, 6, 7, 9, 12, 16, 17};
         int target = 6;
 
-        System.out.println  (binarySearch(arr, target));
+        System.out.println(recursiveBinarySearch(arr, 0, arr.length-1, target));
 
-    }    
+    }
+
 }
