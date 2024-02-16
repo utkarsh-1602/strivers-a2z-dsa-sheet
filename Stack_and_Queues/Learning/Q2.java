@@ -6,8 +6,16 @@
 
     Approach: The intuition is to fill the array in a circular manner, (ie) after popping from the front, rather than moving all the elements towards the front. We can have 2 variables to keep track of the start and end indexes of the sequence. Mod addition is done to handle boundary conditions.
 
-    Time Complexity: 
-    Space Complexity: 
+    Time Complexity:
+        pop function: O(1)
+        push function: O(1)
+        top function: O(1)
+        size function: O(1)
+
+    Space Complexity:
+        Whole Queue: O(n)
+
+
 
     Reference: https://takeuforward.org/data-structure/implement-queue-using-array/
  */
