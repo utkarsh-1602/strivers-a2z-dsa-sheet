@@ -35,7 +35,7 @@ public class Q2_bruteforce{
             }
         }
         
-        return -1;
+        return arr.length;
     }
 
     public static void main(String[] args) {
