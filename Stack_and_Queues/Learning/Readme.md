@@ -1,5 +1,6 @@
 # Stack and Queues Basic Problems 
 - Stack is a data structure that follows the Last In First Out (LIFO) rule.
+- Queue is a data structure that follows the First In First Out (FIFO) rule.
 
 ## Stack Functions 
 
