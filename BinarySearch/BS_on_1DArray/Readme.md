@@ -12,3 +12,6 @@
 - The main difference between the lower and upper bound is in the condition. For the lower bound the condition was arr[ind] >= x and here, in the case of the upper bound, it is arr[ind] > x.
 
 
+### Floor and Ceil 
+- The floor of x is the largest element in the array which is smaller than or equal to x.
+- The ceiling of x is the smallest element in the array greater than or equal to x.
