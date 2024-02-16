@@ -17,10 +17,10 @@ package BinarySearch.BS_on_1DArray;
 
     Approach : optimal  
 
-    Time Complexity:  O(N), where N = size of the given array.
-    Reason: In the worst case, we have to travel the whole array. This is basically the time complexity of the linear search algorithm.
+    Time Complexity: O(logN), where N = size of the given array.
+    Reason: We are basically using the Binary Search algorithm.
 
-    Space Complexity: O(1), as we are not using any extra space
+    Space Complexity: O(1) as we are using no extra space.
 
     Reference: https://takeuforward.org/arrays/implement-upper-bound/
 
@@ -31,13 +31,28 @@ public class Q3_optimal {
 
     static int upperBound(int[] arr, int x){
 
-        int n = arr.length;
+        int n = arr.length; 
+        int start = 0;
+        int end = n - 1;
+        int result = n;
 
-        for(int i = 0; i < n; i++){
-            if(arr[i] > x) return i; 
+        while(start <= end){
+
+            int mid = start + (end - start) / 2;
+
+            if(arr[mid] > x){
+                result = mid;
+                end = mid - 1;
+            }
+
+            if(arr[mid] <= x){
+                start = mid + 1;
+            }
+
         }
 
-        return n; 
+        return result; 
+
     }
 
     public static void main(String[] args) {
