@@ -22,7 +22,7 @@ package BinarySearch.BS_on_1DArray;
 
     Space Complexity: O(1) as we are using no extra space.
 
-    Reference: https://takeuforward.org/data-structure/count-occurrences-in-sorted-array/
+    Reference: https://takeuforward.org/data-structure/search-element-in-a-rotated-sorted-array/
 
  */
 
