@@ -5,10 +5,6 @@ package BinarySearch.BS_on_1DArray;
 
     Problem Statement: Given a sorted array arr of n integers and a target value k. Write a program to find the indices of the first and the last occurrences of the target value. If the target is not found then return -1 as indices.
 
-
-    The floor of x is the largest element in the array which is smaller than or equal to x.
-    The ceiling of x is the smallest element in the array greater than or equal to x.
-
     Example 1:
     Input Format: n = 8, arr[] = {2, 4, 6, 8, 8, 8, 11, 13}, k = 8
     Result: 3 5
@@ -21,8 +17,8 @@ package BinarySearch.BS_on_1DArray;
 
     Approach : optimal  
 
-    Time Complexity: O(logN), where N = size of the given array.
-    Reason: We are basically using the Binary Search algorithm.
+    Time Complexity:  O(2*logN), where N = size of the given array.
+    Reason: We are basically using the binary search algorithm twice.
 
     Space Complexity: O(1) as we are using no extra space.
 
