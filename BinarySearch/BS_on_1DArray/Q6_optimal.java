@@ -31,7 +31,7 @@ package BinarySearch.BS_on_1DArray;
  */
 
 
-public class Q6_bruteforce {
+public class Q6_optimal {
 
     static int firstOccurrence(int[] arr, int x){
 
