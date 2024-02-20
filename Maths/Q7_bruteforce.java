@@ -1,4 +1,4 @@
-package Recursion.easy;
+package Maths;
 
 /*
     Name : String to Integer (atoi)
@@ -42,7 +42,7 @@ package Recursion.easy;
  */
 
 
-public class Q1_bruteforce{
+public class Q7_bruteforce{
 
     static int atoiFunction(String s){
 

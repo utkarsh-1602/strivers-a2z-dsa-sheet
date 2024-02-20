@@ -16,7 +16,7 @@ package Maths;
     Output: Non-Prime
     Explanation: 26 is not prime
 
-    Approach : bruteforce
+    Approach : optimal
 
     Time Complexity:O(sqrt(N))
     Space Complexity: O(1)
