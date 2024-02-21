@@ -45,4 +45,15 @@ Inorder Traversal –  4 2 5 1 6 3
 3. Traverse the right subtree
 
 
-### 
+### Preorder Traversal
+Preorder Traversal is one of the tree traversals in which root is visited then the left subtree is visited and then the right subtree is visited.
+
+![Preorder Traversal](images/img_preorderTraversal.png)
+
+Preorder Traversal – 1 2 4 5 3 6
+
+**Algorithm of Preorder Traversal**:
+
+1. Print the root
+2. Traverse the left subtree
+3. Traverse the right subtree
