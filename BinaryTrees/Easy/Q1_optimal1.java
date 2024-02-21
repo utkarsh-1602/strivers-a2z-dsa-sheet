@@ -30,7 +30,7 @@ class Node{
     }
 }
 
-public class Q1_bruteforce{
+public class Q1_optimal1{
 
     static ArrayList<Integer> inorderTraversal(Node curr){
 
