@@ -57,3 +57,17 @@ Preorder Traversal – 1 2 4 5 3 6
 1. Print the root
 2. Traverse the left subtree
 3. Traverse the right subtree
+
+
+### Postorder Traversal
+Postorder Traversal is one of the tree traversals in which the left subtree is visited, then the right subtree is visited, and then the root is visited.
+
+![Postorder Traversal](images/img_postorderTraversal.png)
+
+Postorder Traversal – 4 5 2 6 3 1
+
+**Algorithm of Postorder Traversal**:
+
+1. Traverse the left subtree
+2. Traverse the right subtree
+3. Print the root

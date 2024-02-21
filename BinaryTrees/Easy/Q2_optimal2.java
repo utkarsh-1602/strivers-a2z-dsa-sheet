@@ -19,6 +19,17 @@ import java.util.ArrayList;
  */
 
 
+
+class Node{
+    int data;
+    Node left, right;
+    Node (int data){
+        this.data = data;
+        left = null;
+        right = null; 
+    }
+}
+
 public class Q2_optimal2 {
     
     static void preorderTraversal(Node root, ArrayList<Integer> preorder){
