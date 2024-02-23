@@ -51,7 +51,7 @@ public class Q8_optimal {
                 
             }
             else{
-                if(list.size() == 0 || list.get(list.size() - 1) != arr2[i]){
+                if(list.size() == 0 || list.get(list.size() - 1) != arr2[j]){
                     list.add(arr2[i]);
                 }
                 j++;
