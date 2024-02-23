@@ -34,7 +34,7 @@ class Queue{
 
     // put array size into Queue 
     public Queue(int maxSize){  
-        this.maxSize = maxSize;
+        this.maxSize = maxSize; // here this is referring to instance variable maxSize in class scope
         arr = new int[maxSize];
         start = -1;
         end = -1;
