@@ -3,11 +3,11 @@
 
     Problem Statement: Given an array of integers, rotating array of elements by k elements either left or right.
 
-    Input: N = 7, array[] = {1,2,3,4,5,6,7} , k=2 , right
+    Input: N = 7, array[] = {1,2,3,4,5,6,7} , k=2
     Output: 6 7 1 2 3 4 5
     Explanation: array is rotated to right by 2 position
 
-    Input: N = 6, array[] = {3,7,8,9,10,11} , k=3 , left 
+    Input: N = 6, array[] = {3,7,8,9,10,11} , k=3 
     Output: 9 10 11 3 7 8
     Explanation: Array is rotated to right by 3 position.
 
