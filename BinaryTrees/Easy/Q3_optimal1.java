@@ -8,7 +8,7 @@ import java.util.Stack;
 
     Problem Statement: Given a binary tree print the preorder traversal of binary tree.
 
-    Approach : optimal (recursive)
+    Approach : optimal (iterative)
 
     Time Complexity: O(N)
     Reason: We are traversing N nodes and every node is visited exactly once.
