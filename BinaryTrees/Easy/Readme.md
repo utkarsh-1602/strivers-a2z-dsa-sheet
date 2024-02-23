@@ -71,3 +71,16 @@ Postorder Traversal – 4 5 2 6 3 1
 1. Traverse the left subtree
 2. Traverse the right subtree
 3. Print the root
+
+## Levelorder Traversal 
+Level order Traversal is one of the tree traversals in which every node in the tree is visited level by level.
+
+![Levelorder Traversal](images/img_levelorderTraversal.png)
+
+Level Order Traversal – 1 2 3 4 5 6
+
+Algorithm of Levelorder Traversal
+
+1. Remove a node from queue.
+2. Print the node.
+3. Add all of its children in the queue

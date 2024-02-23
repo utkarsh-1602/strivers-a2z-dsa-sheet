@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Stack;
 
 /*
-    Name : Post-Order Traversal Of Binary Tree
+    Name : Level Order Traversal of a Binary Tree
 
-    Problem Statement: Given a binary tree print the preorder traversal of binary tree.
+    Problem Statement: Level order traversal of a binary tree. Given the root node of the tree and you have to print the value of the level of the node by level.
 
     Approach : optimal (iterative) using two stacks 
 
@@ -15,7 +15,7 @@ import java.util.Stack;
 
     Space Complexity: O(N)
 
-    Reference: https://takeuforward.org/data-structure/post-order-traversal-of-binary-tree/
+    Reference: https://takeuforward.org/data-structure/preorder-traversal-of-binary-tree/
 
  */
 
@@ -30,7 +30,7 @@ class Node{
     }
 }
 
-public class Q3_optimal3 {
+public class Q4_optimal1 {
 
 
     static ArrayList<Integer> postorderTraversal(Node root, ArrayList<Integer> postorder){

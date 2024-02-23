@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
     Space Complexity: O(N)
 
-    Reference: https://takeuforward.org/data-structure/preorder-traversal-of-binary-tree/
+    Reference: https://takeuforward.org/data-structure/post-order-traversal-of-binary-tree/
 
  */
 
