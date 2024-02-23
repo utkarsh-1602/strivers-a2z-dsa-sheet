@@ -1,13 +1,14 @@
 package BinaryTrees.Easy;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 /*
     Name : Post-Order Traversal Of Binary Tree
 
     Problem Statement: Given a binary tree print the preorder traversal of binary tree.
 
-    Approach : optimal (recursive)
+    Approach : optimal (iterative) using two stacks 
 
     Time Complexity: O(N)
     Reason: We are traversing N nodes and every node is visited exactly once.
@@ -29,16 +30,37 @@ class Node{
     }
 }
 
-public class Q3_optimal2 {
+public class Q3_optimal3 {
 
 
-    static void postorderTraversal(Node root, ArrayList<Integer> postorder){
+    static ArrayList<Integer> postorderTraversal(Node root, ArrayList<Integer> postorder){
 
-        if(root == null) return;
+        if(root == null) return postorder; 
 
-        postorderTraversal(root.left, postorder);
-        postorderTraversal(root.right, postorder);
-        postorder.add(root.data);
+        Stack<Node> s1 = new Stack<>();
+        Stack<Node> s2 = new Stack<>();
+
+        s1.push(root);
+
+        while (!s1.isEmpty()) {
+            root = s1.peek();
+            s1.pop();
+            s2.push(root);
+
+            if(root.left != null){
+                s1.push(root.left);
+            }
+            if(root.right != null){
+                s1.push(root.right);
+            }
+        }
+
+        while(!s2.isEmpty()) {
+            postorder.add(s2.peek().data);
+            s2.pop();
+        }
+
+        return postorder; 
 
     }
 
