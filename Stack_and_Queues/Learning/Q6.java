@@ -17,6 +17,96 @@
     Reference: https://takeuforward.org/data-structure/implement-queue-using-stack/
  */
 
+class Node{
+    int data;
+    Node next;
+    Node(){
+        this.data = 0;
+        this.next = null;
+    }
+    Node(int data){
+        this.data = data;
+        this.next = null;
+    }
+    Node(int data, Node next){
+        this.data = data;
+        this.next = next;
+    }
+}
+
  public class Q6 {
     
-}
+    static class Stack {
+        
+        Node head;
+        int size;
+
+        Stack(){
+            this.head = null;
+            this.size = 0;
+        }
+
+        int getSize(){
+            return size;
+        }
+
+        boolean isEmpty(){
+            return head == null;
+        }
+
+        void push(int data){
+            Node newNode = new Node(data);
+            
+            if(isEmpty()){
+                head = newNode;
+                size++;
+            }
+            else{
+                newNode.next = head;
+                head = newNode;
+                size++;
+            }
+        }
+
+        int pop(){
+            if(isEmpty()){
+                return -1;
+            }
+            else{
+                int poppedElement = head.data;
+                head = head.next;
+                size--;
+                return poppedElement;
+            }
+        }
+
+        int getTop(){
+
+            if(isEmpty()){
+                return -1;
+            }
+            else{
+                return head.data;
+            }
+        }
+        
+    }
+
+    public static void main(String[] args) {
+        
+        Stack stack = new Stack();
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
+
+        System.out.println(stack.getTop());
+        System.out.println(stack.pop());
+        System.out.println(stack.getSize());
+        
+
+
+
+    }
+}   
