@@ -5,13 +5,8 @@
 
     Approach: using two Stacks where push operation is O(N)
 
-    Time Complexity:
-
-
-    Space Complexity:
-        Whole Queue: O(n)
-
-
+    TTime Complexity: O(N )  
+    Space Complexity: O(2N)
 
     Reference: https://takeuforward.org/data-structure/implement-queue-using-array/
  */
