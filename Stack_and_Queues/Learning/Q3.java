@@ -24,7 +24,7 @@ import java.util.LinkedList;
 
 
 
-    Reference: https://takeuforward.org/data-structure/implement-queue-using-array/
+    Reference: https://takeuforward.org/data-structure/implement-stack-using-single-queue/
  */
 
 
