@@ -14,7 +14,7 @@
 
     Space Complexity: O(N)
 
-    Reference: https://takeuforward.org/data-structure/implement-queue-using-stack/
+    Reference: https://takeuforward.org/data-structure/implement-stack-using-linked-list/
  */
 
 class Node{
