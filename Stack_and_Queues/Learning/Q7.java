@@ -15,8 +15,8 @@
     Size             (Returns size of Queue) 
  
 
-    Time Complexity: 
-    Space Complexity: 
+    Time Complexity: O(1)
+    Space Complexity: O(1)
 
     Reference: https://takeuforward.org/data-structure/implement-queue-using-linked-list/
  */
