@@ -48,7 +48,7 @@ public class Q12_better {
 
             //Calculate the length and update maxLen
             if(map.containsKey(rem)){
-                int len = map.get(sum);
+                int len = map.get(rem);
                 maxLen = Math.max(maxLen, len);
             }
 
