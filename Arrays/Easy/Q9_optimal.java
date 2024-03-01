@@ -4,8 +4,8 @@
     Problem Statement: Given an integer N and an array of size N-1 containing N-1 numbers between 1 to N. Find the number(between 1 to N), that is not present in the given array.
 
     Input Format: N = 5, array[] = {1,2,4,5}
-    Result: 3
-    Explanation: In the given array, number 3 is missing. So, 3 is the answer.
+    Result: 5
+    Explanation: In the given array, number 5 is missing. So,  is the answer.
 
     Approach : Optmial 
 
@@ -24,6 +24,7 @@ public class Q9_optimal {
         int sum = 0;
     
         int actualSum = (N*(N+1))/2;
+        System.out.println(actualSum);
 
         for(int i=0; i<N-1; i++){
             sum += arr[i];
@@ -36,8 +37,8 @@ public class Q9_optimal {
 
     public static void main(String[] args) {
         
-        int N = 5;
-        int[] arr = {1,2,4,5};
+        int N = 8;
+        int[] arr = {1,2,3,5,6,7,8};
         int ans = missingElement(arr, N);
         System.out.println(ans);
     }
