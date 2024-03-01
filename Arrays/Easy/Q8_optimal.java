@@ -4,7 +4,6 @@
     Problem Statement: Given two sorted arrays, arr1, and arr2 of size n and m. Find the union of two sorted arrays.
 
     Input:
-    n = 5,m = 5.
     arr1[] = {1,2,3,4,5,6,7,8,9,10};
     arr2[] = {2,3,4,4,5,11,12};
     Output:
@@ -18,9 +17,13 @@
 
     Approach : Optimal
 
-    Time Compleixty : 
+    Time Complexity: O(m+n), Because at max i runs for n times and j runs for m times. When there are no common elements in arr1 and arr2 and all elements in arr1, arr2 are distinct. 
 
-    Space Complexity: 
+    Space Complexity : 
+        O(m+n) {If Space of Union ArrayList is considered} 
+        O(1) {If Space of union ArrayList is not considered}
+
+
 
     Reference: https://takeuforward.org/data-structure/union-of-two-sorted-arrays/
 
