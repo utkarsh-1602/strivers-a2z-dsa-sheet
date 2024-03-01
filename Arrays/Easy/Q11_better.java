@@ -7,7 +7,7 @@
     Result: 4
     Explanation: In this array, only element 4 appear once and the other elements appear twice. So, 4 is the answer.
 
-    Approach : bruteforce
+    Approach : bruteforce (Gives Runtime Error)
 
     Time Complexity: O(N)
 
@@ -15,12 +15,12 @@
 
     Reference: https://takeuforward.org/arrays/find-the-number-that-appears-once-and-the-other-numbers-twice/
 
- */ 
+ */
 
 public class Q11_better {
 
     static void numberAppearOnce(int[] arr){
-        
+
         int n = arr.length;
         int[] countArr = new int[n];
 
@@ -42,6 +42,6 @@ public class Q11_better {
         
         int[] arr = {2,2,1,1,3,5,5,5,7,7,3,9,5,7,7,7,5};
         numberAppearOnce(arr);
-
+        
     }
 }

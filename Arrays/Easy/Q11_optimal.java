@@ -38,14 +38,15 @@ public class Q11_optimal {
         int n = arr.length;
 
         // XOR all elements
-        int xorr = 0;
-
-        for(int i=0; i<n; i++){
-            xorr = xorr ^ arr[i];
+        int val = 0;
+        for(int i=0;i<n;i++){
+            val = val ^ arr[i];
         }
 
-        return xorr;
+        return val;
     }
+
+    
 
     public static void main(String[] args) {
         
