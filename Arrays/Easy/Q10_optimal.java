@@ -23,10 +23,15 @@ public class Q10_optimal {
     static int maxConsecutiveOnes(int[] arr){
 
         int maxCount = 0;
+        int count = 0;
+
         for(int i=0; i<arr.length; i++){
-            maxCount++;
-            if(arr[i] == 0){
-                maxCount = 0;
+            if(arr[i] == 1){
+                count++;
+                maxCount = Math.max(maxCount, count);
+            }
+            else{
+                count = 0;
             }
         }
 
@@ -35,7 +40,7 @@ public class Q10_optimal {
 
     public static void main(String[] args) {
         
-        int[] arr = {1,1,0,1,1,1};
+        int[] arr = {1,1,0,1,1,1,0,1,1};
         int ans = maxConsecutiveOnes(arr);
         System.out.println(ans);
     }    
