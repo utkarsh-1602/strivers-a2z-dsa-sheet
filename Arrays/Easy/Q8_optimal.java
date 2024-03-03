@@ -46,7 +46,7 @@ public class Q8_optimal {
 
             if(arr1[i] <= arr2[j]){
 
-                // we know the array is sorted, so because of that we are checking if the last element in the list is not equal to the current element or not 
+                // we know the array is sorted, to avoid putting the duplicate element in the list, we are checking if the last element we inputted is not equal to the current element
                 if(list.size() == 0 || list.get(list.size() - 1) != arr1[i]){
                     list.add(arr1[i]);
                 }
