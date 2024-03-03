@@ -44,7 +44,7 @@ public class Q10_optimal2 {
 
             if(arr[start] <= arr[mid]){
                 ans = Math.min(ans, arr[start]);
-                start = mid + 1;
+                start = mid + 1; 
             }            
 
             else if (arr[mid] <= arr[end]){
