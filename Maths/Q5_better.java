@@ -1,7 +1,5 @@
 package Maths;
 
-import java.util.ArrayList;
-
 /*
     Name : Print all Divisors of a given Number
 

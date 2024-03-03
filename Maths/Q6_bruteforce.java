@@ -30,6 +30,11 @@ public class Q6_bruteforce {
 
     static boolean checkPrime(int n){
 
+         // Edge cases for 0 and 1
+         if (n <= 1) {
+            return false;
+        }
+
         int root = (int) Math.sqrt(n);
 
         for(int i=2; i<root; i++){

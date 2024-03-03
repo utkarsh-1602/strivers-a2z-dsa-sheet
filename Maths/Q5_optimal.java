@@ -36,7 +36,10 @@ public class Q5_optimal {
 
             if(n%i == 0){
                 System.out.print(i + " ");
-                if(i != n/i) System.out.print(n/i + " "); // corner case for perfect square (For. example if i=6, then i == n/i, so it will print the same number twice, to avoid that we passing the check i != n/i
+                if(i != n/i){
+                    System.out.print(n/i + " "); 
+                    // corner case for perfect square (For. example if i=6, then i == n/i, so it will print the same number twice, to avoid that we passing the check i != n/i
+                }
             }
 
         }
