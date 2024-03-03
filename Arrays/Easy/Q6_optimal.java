@@ -1,7 +1,7 @@
 /*
     Name : Rotate array by K elements
 
-    Problem Statement: Given an array of integers, rotating array of elements by k elements either left or right.
+    Problem Statement: Given an array of integers, rotating array of elements by k elements to the right.
 
     Input: N = 7, array[] = {1,2,3,4,5,6,7} , k=2 , right
     Output: 6 7 1 2 3 4 5
@@ -56,8 +56,8 @@ public class Q6_optimal {
 
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5,6,7};
-        int k = 2;
+        int[] arr = {1,3,6,11,12,17};
+        int k = 4;
         rotateByKElements(arr, k);
     }
 }

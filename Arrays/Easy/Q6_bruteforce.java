@@ -1,7 +1,7 @@
 /*
     Name : Rotate array by K elements
 
-    Problem Statement: Given an array of integers, rotating array of elements by k elements from right.
+    Problem Statement: Given an array of integers, rotating array of elements by k elements to the right.
 
     Input: N = 7, array[] = {1,2,3,4,5,6,7} , k=2
     Output: 6 7 1 2 3 4 5
