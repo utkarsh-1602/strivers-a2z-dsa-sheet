@@ -24,7 +24,7 @@ package BinarySearch.BS_on_1DArray;
     Space Complexity: O(1)
     Reason: We have not used any extra data structures, this makes space complexity, even in the worst case as O(1).
 
-    Reference: https://takeuforward.org/data-structure/minimum-in-rotated-sorted-array/
+    Reference: https://takeuforward.org/arrays/find-out-how-many-times-the-array-has-been-rotated/
 
  */
 
