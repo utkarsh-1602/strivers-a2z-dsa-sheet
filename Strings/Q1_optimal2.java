@@ -26,7 +26,10 @@ public class Q1_optimal2 {
 
     static String removeOutermostParentheses(String s){
         
-        int count=0,x=0,y=0;
+        int count=0;
+        int start=0;
+        int end=0;
+
         String a=null;
         for(int i=0;i<s.length();i++)
         {
@@ -41,9 +44,9 @@ public class Q1_optimal2 {
             }
             if(count==0)
             {
-                y=i;
-               a+=s.substring(x+1,y); // (1,5)
-               x=i+1; // 6
+                end=i;
+               a+=s.substring(start+1,end); // (1,5)
+               start=i+1; // 6
             }
         }
         a=a.substring(4);
