@@ -55,7 +55,7 @@ public class Q3_optimal {
 
     public static void main(String[] args) {
         
-        String s = "35427";
+        String s = "354276";
         System.out.println(largestOddNumberInString(s));
 
     }
