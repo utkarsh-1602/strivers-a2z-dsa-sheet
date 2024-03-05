@@ -1,5 +1,5 @@
 # LinkedList 
-- It is a linear data structure that can be visualized as a chain with different nodes connected, where each node represents a different element. The difference between arrays and linked lists is that, unlike arrays, the elements are not stored at a contiguous location.
+- It is a linear data structure that can be visualized as a chain with different nodes connected, where each node represents a different element. The difference between arrays and linked lists is that, unlike arrays, the elements are not stored at a contiguous location. (Contiguous memory location refers to a situation where consecutive memory addresses are allocated to store data elements. In simpler terms, it means that the memory locations for storing elements are adjacent or next to each other in sequential order.)
 
 - Since for any element to be added in an array, we need the exact next memory location to be empty, and it is impossible to guarantee that it is possible. Hence adding elements to an array is not possible after the initial assignment of size.
 
