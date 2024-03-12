@@ -84,3 +84,33 @@ Algorithm of Levelorder Traversal
 1. Remove a node from queue.
 2. Print the node.
 3. Add all of its children in the queue
+
+<hr>
+
+### What is difference between `queue.offer()` and `queue.add()` ?
+
+**offer():**
+The `offer()`method attempts to add the specified element to the queue if it is possible to do so immediately without violating capacity restrictions.
+If the queue has a fixed capacity and it is full, offer() will return false without throwing an exception.
+If the element is successfully added, `offer()` returns true.
+
+**add():** 
+The `add()` method also attempts to add the specified element to the queue.
+However, if the queue has a fixed capacity and it is full, add() will throw an IllegalStateException.
+It is primarily used when you are certain that the element can always be added to the queue.
+
+
+### What is difference between `queue.poll()` and `queue.remove()` ?
+
+**poll()**: 
+Retrieves and removes the head of this queue, or returns `null` if this queue is empty.
+
+**remove()**: 
+Retrieves and removes the head of this queue. This method differs from `poll()` only in that it throws an exception if this queue is empty.
+
+- **Returns**: the head of this queue
+- **Throws**:`NoSuchElementException` - if this queue is empty
+
+
+
+
