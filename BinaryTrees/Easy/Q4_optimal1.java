@@ -35,6 +35,8 @@ public class Q4_optimal1 {
     static ArrayList<Integer> levelOrderTraversal(TreeNode root){
 
         Queue<TreeNode> queue = new LinkedList<>();
+        // it is a linkedlist where each node is a TreeNode 
+        
         ArrayList<Integer> levelOrder = new ArrayList<>();
 
         if(root == null) return levelOrder;
