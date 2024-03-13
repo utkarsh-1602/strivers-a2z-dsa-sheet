@@ -35,26 +35,26 @@ public class Q2_optimal1 {
 
     static ArrayList<Integer> preorderTraversal(Node root){
 
+
         ArrayList<Integer> preorder = new ArrayList<>();
         Stack<Node> stack = new Stack<>();
 
-        if(root == null) return preorder;
-
-        stack.push(root);
-
-        while(!stack.isEmpty()){
-            Node topNode = stack.peek();
-            preorder.add(topNode.data);
-            stack.pop();
-            if(topNode.right != null){
-                stack.push(topNode.right);
+        while(true){
+            if(root != null){
+                stack.add(root);
+                preorder.add(root.data);
+                root = root.left;
             }
-            if(topNode.left != null){
-                stack.push(topNode.left);
+            else{
+                if(stack.empty()) break;
+                root = stack.peek();
+                stack.pop();
+                root = root.right;
             }
         }
 
         return preorder; 
+
     }
 
     public static void main(String[] args) {
