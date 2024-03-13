@@ -38,17 +38,19 @@ public class Q2_optimal1 {
         ArrayList<Integer> preorder = new ArrayList<>();
         Stack<Node> stack = new Stack<>();
 
-        while(true){
-            if(root != null){
-                stack.add(root);
-                preorder.add(root.data);
-                root = root.left;
+        if(root == null) return preorder;
+
+        stack.push(root);
+
+        while(!stack.isEmpty()){
+            Node topNode = stack.peek();
+            preorder.add(topNode.data);
+            stack.pop();
+            if(topNode.right != null){
+                stack.push(topNode.right);
             }
-            else{
-                if(stack.empty()) break;
-                root = stack.peek();
-                stack.pop();
-                root = root.right;
+            if(topNode.left != null){
+                stack.push(topNode.left);
             }
         }
 
