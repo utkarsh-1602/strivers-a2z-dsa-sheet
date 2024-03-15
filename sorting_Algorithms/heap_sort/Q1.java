@@ -22,8 +22,10 @@ package sorting_Algorithms.heap_sort;
     3. perform heap sort by swapping the max node to the lowest leaf node, and then deleting that max node 
     4. return the sorted array 
 
-    Time complexity: 
-    Space Complexity: 
+    Time complexity: O(NLogN)
+    The time complexity of heap sort is O(n logn) in all three cases (best case, average case, and worst case).
+    
+    Space Complexity: O(1)
     
     Reference: https://www.geeksforgeeks.org/heap-sort/
 
