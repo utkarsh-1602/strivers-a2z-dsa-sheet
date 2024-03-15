@@ -55,7 +55,8 @@ public class Q4_optimal1 {
             }
 
             levelOrder.add(queue.poll().data);
-
+            // if you add queue.poll() directly to levelOrder, you're adding the actual node object to the levelOrder list, not the value stored in the node.
+            // The likely intention behind using queue.poll().data is to add the value of the node to the levelOrder list rather than the node itself.
         }
 
         return levelOrder;
