@@ -19,7 +19,7 @@ package sorting_Algorithms.heap_sort;
 
     1. build a complete binary tree from the given array
     2. trasform that tree into max heap 
-    3. perform heap sort by swapping the max node to the lowest leaf node, and then deleting that max node 
+    3. swap the root node with the last leaf node, and then again convert the tree into min heap, and do this process recursively 
     4. return the sorted array 
 
     Time complexity: O(NLogN)
