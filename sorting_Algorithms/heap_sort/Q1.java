@@ -88,6 +88,19 @@ public class Q1 {
             heapify(arr, n, i); 
         }
 
+
+        // max heap 
+        /* 
+
+                 52
+                /  \
+               46   24
+              / \   /
+            13  20  9
+
+        */
+
+
         // after getting the max heap 
         // we will extract the elements one by one from the heap 
 
