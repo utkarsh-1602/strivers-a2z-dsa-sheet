@@ -9,6 +9,12 @@ package LinkedList.doubly_linkedList;
     Value to be Inserted: 6
     Result: DLL: 1 <-> 2 <-> 3 <-> 4 <-> 6
 
+    Time Complexity: O(N) The time complexity of this insertion operation is O(N) because we have to traverse the entire list to reach its tail. The complexity would be O(1) if we were given the tail node directly.
+    Space Complexity: O(1)  The space complexity is also O(1) because we are notusing any extradatastructures to do the operations apart from creating a single new node.
+
+
+
+
    Reference: https://takeuforward.org/data-structure/insert-at-end-of-doubly-linked-list/
  */
 
