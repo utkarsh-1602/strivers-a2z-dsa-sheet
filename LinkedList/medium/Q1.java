@@ -19,8 +19,8 @@ package LinkedList.medium;
 
     Approach: optimal (tortoise-hare-approach)
 
-    Time Complexity:
-    Space Complexity:
+    Time Complexity: O(N)
+    Space Complexity: O(1)
 
     Reference: https://takeuforward.org/data-structure/find-middle-element-in-a-linked-list/
  */
