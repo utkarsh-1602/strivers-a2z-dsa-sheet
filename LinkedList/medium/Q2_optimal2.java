@@ -1,7 +1,5 @@
 package LinkedList.medium;
 
-import java.util.Stack;
-
 /*
     Name : Reverse a Linked List
 
@@ -15,16 +13,17 @@ import java.util.Stack;
     Input: head = [1,2,3,4,5,6]
     Result: [6,5,4,3,2,1]
 
-    Approach: bruteforce 
+    Approach: optimal (recursive)
 
-    Time Complexity: O(2N)
-    Space Complexity: O(N) 
+    Time Complexity: O(N)
+    Space Complexity: O(1)
+    The code uses only a constant amount of additional space, regardless of the linked list’s length. This is achieved by using three pointers (prev, temp and front) to reverse the list without any significant extra memory usage, resulting in constant space complexity, O(1).
 
     Reference: https://takeuforward.org/data-structure/reverse-a-linked-list/
  */
 
 
-public class Q2_bruteforce{
+public class Q2_optimal2{
 
     public static class Node {
         int data;
@@ -68,22 +67,12 @@ public class Q2_bruteforce{
 
         if(head == null || head.next == null) return head;
 
-        Stack<Integer> stack = new Stack<Integer>();
+        Node newHead = reverseLL(head.next);
+        Node front = head.next;
+        front.next = head;
+        head.next = null;
 
-        Node curr = head;
-        while(curr != null){
-            stack.push(curr.data);
-            curr = curr.next;
-        }
-
-        curr = head;
-
-        while(!stack.isEmpty()){
-            curr.data = stack.pop();
-            curr = curr.next;
-        }
-
-        return head;
+        return newHead;
     }
     
     

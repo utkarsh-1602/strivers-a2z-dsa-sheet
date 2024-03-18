@@ -13,7 +13,7 @@ package LinkedList.medium;
     Input: head = [1,2,3,4,5,6]
     Result: [6,5,4,3,2,1]
 
-    Approach: optimal 
+    Approach: optimal (iterative)
 
     Time Complexity: O(N)
     Space Complexity: O(1)
@@ -66,7 +66,7 @@ public class Q2_optimal{
 
     static Node reverseLL(Node head){
 
-        if(head == null) return null;
+        if(head == null || head.next == null) return head;
 
         Node temp = head;
         Node prev = null;
