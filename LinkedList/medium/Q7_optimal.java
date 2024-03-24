@@ -11,8 +11,8 @@
 
     Approach: optimal
 
-    Time Complexity:
-    Space Complexity: 
+    Time Complexity: O(N)
+    Space Complexity: O(1)
 
     Reference: https://www.codingninjas.com/studio/problems/segregate-even-and-odd-nodes-in-a-linked-list_1116100?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
  */
