@@ -25,7 +25,7 @@
     Reference: https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/
  */
 
-public class Q10_optimal{
+public class Q9_optimal{
 
     public static class Node {
         int data;
