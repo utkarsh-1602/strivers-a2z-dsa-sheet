@@ -12,7 +12,7 @@
 
     Approach: optimal (tortoise and hare algorithm)
 
-    Time Complexity: O(2N)
+    Time Complexity: O(N/2)
     Space Complexity: O(1)
 
     Reference: https://leetcode.com/problems/middle-of-the-linked-list/description/
