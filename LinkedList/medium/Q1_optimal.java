@@ -1,5 +1,3 @@
-package LinkedList.medium;
-
 /*
     Name : Find middle node in a Linked List
 
