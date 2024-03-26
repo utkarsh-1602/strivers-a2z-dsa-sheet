@@ -20,7 +20,7 @@
     Reference: https://leetcode.com/problems/middle-of-the-linked-list/description/
  */
 
-public class Q9_bruteforce{
+public class Q1_bruteforce{
 
     public static class Node {
         int data;

@@ -1,7 +1,7 @@
 package LinkedList.medium;
 
 /*
-    Name : Find middle element in a Linked List
+    Name : Find middle node in a Linked List
 
     Problem Statement: Given the head of a singly linked list, return the middle node of the linked list. If there are two middle nodes, return the second middle node.
 
@@ -26,7 +26,7 @@ package LinkedList.medium;
  */
 
 
-public class Q1{
+public class Q1_optimal{
 
     public static class Node {
         int data;
