@@ -1,3 +1,5 @@
+package LinkedList.medium;
+
 /*
     Name : Sort LinkedList
 
@@ -63,8 +65,10 @@ public class Q10_optimal{
 
     static Node findMiddleNode(Node head){
 
-        Node slow = head, fast = head;
-        while(fast.next.next != null){ 
+        Node slow = head;
+        Node fast = head.next;
+
+        while(fast != null && fast.next != null){ 
             slow = slow.next;
             fast = fast.next.next;
         }
@@ -121,7 +125,7 @@ public class Q10_optimal{
 
     public static void main(String[] args) {
         
-        int[] arr = {4,2,1,3};
+        int[] arr = {-1,5,3,4,0};
 
         Node head = convertArrayToLL(arr);
         head = sortLL(head);
