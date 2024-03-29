@@ -48,6 +48,22 @@ public class Q12_bruteforce{
         System.out.println();
     }
 
+    static Node insertNode(Node head, int val){
+        Node newNode = new Node(val);
+
+        if(head == null){
+            head = newNode;
+            return head;
+        }
+
+        Node temp = head;
+        while(temp.next != null){
+            temp = temp.next;
+        }
+        temp.next = newNode;
+        return head;
+    }
+
 
     static Node convertArrayToLL(int[] arr){
 
@@ -65,30 +81,46 @@ public class Q12_bruteforce{
      }
 
 
-    static Object findIntersectionLL(Node list1, Node list2){
-        while(list2 != null) {
+    static Node findIntersectionLL(Node list1, Node list2){
+
+        while(list2 != null){
             Node temp = list1;
-            while(temp != null) {
-                //if both nodes are same
+            while (temp != null) {
                 if(temp == list2) return list2;
                 temp = temp.next;
             }
             list2 = list2.next;
         }
-        //intersection is not present between the lists return null
+
         return null;
-    
     }
 
     public static void main(String[] args) {
-        
-        int[] arr = {1,3,1,2,4};
-        int[] arr2 = {3,2,4};
 
-        Node list1 = convertArrayToLL(arr);
-        Node list2 = convertArrayToLL(arr2);
+        Node head = null;
+        head=insertNode(head,1);
+        head=insertNode(head,3);
+        head=insertNode(head,1);
+        head=insertNode(head,2);
+        head=insertNode(head,4);
 
-        Object result = findIntersectionLL(list1, list2);
-        System.out.println(result);
+        Node list1 = head;
+        head = head.next.next.next;
+
+        Node newNode = null;
+        newNode = insertNode(newNode, 3);
+        Node list2 = newNode;
+        newNode.next = head;
+
+
+        Node result = findIntersectionLL(list1,list2);
+
+        if(result == null){
+            System.out.println("No intersection\n");
+        }
+        else{
+            System.out.println("The intersection point is " + result.data);
+        }
+
     }
 }
