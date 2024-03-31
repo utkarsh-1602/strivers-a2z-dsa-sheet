@@ -17,13 +17,15 @@ package LinkedList.medium;
     Explanation: Since the digits are stored in reverse order, reverse the numbers first to get the original number and then add them as → 9999999 + 9999 = 8999001.
     Approach: optimal 
 
-    Time Complexity: O(N)
-    Space Complexity: O(1)
+    Time Complexity: O(max(m,n)). Assume that m and n represent the length of l1 and l2 respectively, the algorithm above iterates at most max(m,n) times.
+    Space Complexity: O(max(m,n)). The length of the new list is at most max(m,n)+1.
+
+
 
     Reference: https://takeuforward.org/data-structure/add-two-numbers-represented-as-linked-lists/
  */
 
-public class Q13_bruteforce{
+public class Q13_optimal{
 
     public static class Node {
         int data;
@@ -63,99 +65,44 @@ public class Q13_bruteforce{
   
      }
 
-    static Node reversedLL(Node head){
-
-        if(head == null || head.next == null    ) return head;
-
-        Node last = null;
-        Node curr = head;
-
-        while(curr != null){
-            Node nextOne = curr.next;
-            curr.next = last;
-            last = curr;
-            curr = nextOne;
-        }
-
-        return last;
-    }
-
     static Node addTwoLL(Node list1, Node list2){
 
-        if(list1 == null){
-            return reversedLL(list2);   
-        }
-        if(list2 == null){
-            return reversedLL(list1);
-        }
+        Node dummyNode = new Node(0);
+        Node tail = dummyNode;
+        int carry = 0;
 
-        if(list1.data == 0 && list2.data == 0){
-            return list1;
+        while(list1 != null || list2 != null || carry != 0){
+
+            int digit1 = (list1 != null) ? list1.data : 0;
+            int digit2 = (list2 != null) ? list2.data : 0;
+
+            int sum = digit1 + digit2 + carry;
+            int digit = sum % 10;
+            carry = sum / 10;
+
+            Node newNode = new Node(digit);
+            tail.next = newNode;
+            tail = tail.next;
+
+            list1 = (list1 != null) ? list1.next : null;
+            list2 = (list2 != null) ? list2.next : null;
+
         }
-
-
-        Node reversedList1 = reversedLL(list1);
-        Node reversedList2 = reversedLL(list2);
         
-        long res = 0;
-        long res2 = 0;
-
-        printLL(reversedList1);
-        System.out.print("This is reversed list 2 : ");
-        printLL(reversedList2);
-
-        while (reversedList1 != null) {
-            
-            res = res*10 + reversedList1.data;
-            reversedList1 = reversedList1.next;
-        }
-
-        while (reversedList2 != null) {
-            
-            res2 = res2*10 + reversedList2.data;
-            reversedList2 = reversedList2.next;
-        }
-
-        System.out.println(res);
-        System.out.println("Reversed2: " + res2);
-
-
-        long sum = res + res2;
-        System.out.println(sum);
-
-        Node finalNode = new Node(-1);
-        Node temp = finalNode;
-
-        while(sum > 0){
-
-            int digit = (int) (sum % 10);
-
-            if(temp.next == null){
-                temp.next = new Node(digit);
-                temp = temp.next;
-            }
-            else{
-                temp.next = new Node(digit);
-                temp = temp.next;
-
-            }
-            sum = sum / 10;
-        }
-
-        return finalNode.next;
-
+        Node result = dummyNode.next;
+        dummyNode.next = null;
+        return result;
     }
 
     
     public static void main(String[] args) {
         
-        int[] arr = {9};
-        int[] arr2 = {1,9,9,9,9,9,9,9,9,9};
+        int[] arr = {2,4,3};
+        int[] arr2 = {5,6,4};
 
         Node list1 = convertArrayToLL(arr);
         Node list2 = convertArrayToLL(arr2);
 
-        
         Node result = addTwoLL(list1, list2);
         printLL(result);
     }
