@@ -18,7 +18,7 @@
         [-1, -1] (for 2nd variant)
     Explanation: There exist no such two numbers whose sum is equal to the target.
 
-    Approach : Bruteforce 
+    Approach : Better 
 
     Time Complexity: O(N)
 
@@ -42,9 +42,9 @@ public class Q1_better {
         int[] result = new int[2];
         int difference = 0;
 
-        if(arr.length == 0 || arr.length == 1){
-            return new int[] {-1,-1}; 
-        }
+            if(arr.length == 0 || arr.length == 1){
+                return new int[] {-1,-1}; 
+            }
 
         for(int i = 0; i < arr.length; i++){
 
