@@ -15,10 +15,10 @@
     Explanation:
     Array has only one element and which is giving positive sum of 1. 
 
-    Approach : bruteforce 
-
-    Time Complexity: 
-    Space Complexity:
+    Approach : better 
+ 
+    Time Complexity: O(N*2), If large test cases, it will throw TLE error
+    Space Complexity: O(1)
 
     Reference: https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/
 
@@ -28,21 +28,31 @@
 
 package medium;
 
-import java.util.Arrays;
+public class Q4_better{
 
-public class Q4_bruteforce{
+    static int kadanesAlgorithm(int[] arr){
 
-    static int[] kadanesAlgorithm(int[] arr){
+        if(arr.length == 0) return -1; 
 
+        int max = Integer.MIN_VALUE;
+        
+        for(int i = 0; i < arr.length; i++){
+            int sum = 0;
+            for(int j = i; j < arr.length; j++){
+                sum += arr[j];
+                max = Math.max(max, sum);
+            }    
+        }
 
+        return max;
 
     }
 
     public static void main(String[] args) {
         
-        int[] arr = {-2,1,-3,4,-1,2,1,-5,4};
-        int[] ans = kadanesAlgorithm(arr);
+        int[] arr = {-7, -8, -16, -4, -8, -5, -7, -11, -10, -12, -4, -6, -4, -16, -10};
+        int ans = kadanesAlgorithm(arr);
 
-        System.out.println(Arrays.toString(ans));
+        System.out.println(ans);
     }
 }
