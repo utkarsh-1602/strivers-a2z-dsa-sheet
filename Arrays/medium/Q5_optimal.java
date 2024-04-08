@@ -24,7 +24,7 @@
 
     Approach : optimal 
  
-    Time Complexity:
+    Time Complexity: O(N)
     Space Complexity: O(1)
 
     Reference: https://takeuforward.org/data-structure/stock-buy-and-sell/
