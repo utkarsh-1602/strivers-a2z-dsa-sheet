@@ -1,3 +1,4 @@
+package medium;
 /*
     Name : Next Permutation 
 
@@ -33,7 +34,7 @@
 
 import java.util.*;
 
-public class Q3_optimal{
+public class Q7_optimal{
 
     public static List<Integer> nextGreaterPermutations(List<Integer> arr){
 
