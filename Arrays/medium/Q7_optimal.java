@@ -15,8 +15,6 @@ package medium;
 
         Lexicographically means in dictionary order, so the "next lexicographically greater permutation" is the one that would come next if the permutations were listed in dictionary order.
 
-        Dictionary order, also known as lexicographic order, is an ordering of words or sequences based on the order of their constituent elements. In the context of permutations or strings, it refers to the order that you would find them if you were looking them up in a dictionary.
-
     Approach : optimal 
 
         1. find the break point: find the number which is less than i+1, such as arr[i] < arr[i+1]
