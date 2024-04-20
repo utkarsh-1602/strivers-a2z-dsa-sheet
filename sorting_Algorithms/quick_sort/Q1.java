@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /*
-    Name : Merge Sort Algorithm
+    Name : Quick Sort Algorithm
 
-    Problem Statement: Given an array of size n, sort the array using Merge Sort.
+    Problem Statement: Given an array of size n, sort the array using Quick Sort.
 
     Example 1:
     Input:  N = 5  , Arr[] = {4,1,7,9,3}
