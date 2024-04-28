@@ -15,7 +15,7 @@ s
     Output: 4
     Explanation: The longest consecutive subsequence is 5, 6, 7, and 8.
 
-    Approach : bruteforce 
+    Approach : better 
 
     Time Complexity: O(N*LogN) + O(N) = O(N*LogN)
     Space Complexity: O(1)
@@ -27,14 +27,6 @@ import java.util.Arrays;
 
 public class Q9_better {
 
-    public static boolean linearSearch(int []a, int num) {
-        int n = a.length; //size of array
-        for (int i = 0; i < n; i++) {
-            if (a[i] == num)
-                return true;
-        }
-        return false;
-    }
     public static int longestConsecutiveSequence(int []arr) {
 
         int n = arr.length; 
