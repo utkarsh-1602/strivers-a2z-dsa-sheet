@@ -17,27 +17,43 @@ s
 
     Approach : bruteforce 
 
-    Time Complexity: 
-    Space Complexity: 
+    Time Complexity: O(N^2)
+    Space Complexity: O(1)
 
     Reference: https://takeuforward.org/data-structure/longest-consecutive-sequence-in-an-array/
  */
 
 public class Q9_bruteforce {
 
-    static int longestConsecutiveSequence(int[] arr){
-
-        if(arr.length == 0) return 0;
-        if(arr.length == 1) return arr[0];
-
-        int count = 0;
-
-        for(int i=0; i<arr.length-1; i++){
-            if(arr[i] > arr[i+1]){
-                count++;
-            }
+    public static boolean linearSearch(int []a, int num) {
+        int n = a.length; //size of array
+        for (int i = 0; i < n; i++) {
+            if (a[i] == num)
+                return true;
         }
+        return false;
+    }
+    public static int longestConsecutiveSequence(int []a) {
 
+        int n = a.length; 
+        int longest = 1;
+
+        //pick a element and search for its
+        //consecutive numbers:
+
+        for (int i = 0; i < n; i++) {
+            int x = a[i];
+            int cnt = 1;
+            //search for consecutive numbers
+            //using linear search:
+            while (linearSearch(a, x + 1) == true) {
+                x += 1;
+                cnt += 1;
+            }
+
+            longest = Math.max(longest, cnt);
+        }
+        return longest;
     }
 
     public static void main(String[] args) {
