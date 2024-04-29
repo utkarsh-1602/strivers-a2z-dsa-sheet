@@ -1,3 +1,4 @@
+package medium;
 /*
     Name : Set Matrix Zero
 
@@ -23,7 +24,7 @@
 
 import java.util.*;
 
-public class Q1_better {
+public class Q10_better {
 
     static ArrayList<ArrayList<Integer>> zeroMatrix(ArrayList<ArrayList<Integer>> matrix, int n, int m){
 
@@ -54,6 +55,20 @@ public class Q1_better {
 
         return matrix;
     }
+
+    static void printMatrix(ArrayList<ArrayList<Integer>> answer){
+
+        // This is an enhanced for loop that iterates over each row in the answer matrix. For each iteration, the current row is assigned to the variable row, which has the type ArrayList<Integer>.
+        // Inside the outer loop, there is another enhanced for loop that iterates over each element (Integer x) in the current row (row).
+        for(ArrayList<Integer> row: answer){
+            for(Integer x: row){
+                System.out.print(x + " ");
+            }
+            System.out.println();
+        }
+
+        // So, the nested for loop is responsible for iterating through each element in the 2D ArrayList answer and printing it to the console in a row-by-row fashion. The outer loop iterates through rows, and the inner loop iterates through elements in each row.
+    }
     
 
     public static void main(String[] args){
@@ -72,16 +87,8 @@ public class Q1_better {
 
         System.out.println("Final matrix is : ");
 
-        // This is an enhanced for loop that iterates over each row in the answer matrix. For each iteration, the current row is assigned to the variable row, which has the type ArrayList<Integer>.
-        // Inside the outer loop, there is another enhanced for loop that iterates over each element (Integer x) in the current row (row).
-        for(ArrayList<Integer> row: answer){
-            for(Integer x: row){
-                System.out.print(x + " ");
-            }
-            System.out.println();
-        }
 
-        // So, the nested for loop is responsible for iterating through each element in the 2D ArrayList answer and printing it to the console in a row-by-row fashion. The outer loop iterates through rows, and the inner loop iterates through elements in each row.
+        printMatrix(answer);
     }
 
 }
