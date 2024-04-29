@@ -84,10 +84,7 @@ public class Q10_better {
         int m = matrix.get(0).size(); // number of columns
 
         ArrayList<ArrayList<Integer>> answer = zeroMatrix(matrix, n, m);
-
         System.out.println("Final matrix is : ");
-
-
         printMatrix(answer);
     }
 
