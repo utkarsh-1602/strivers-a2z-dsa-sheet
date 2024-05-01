@@ -1,3 +1,4 @@
+package medium;
 /*
     Name : Set Matrix Zero
 
@@ -18,11 +19,10 @@
 
     Reference: https://takeuforward.org/data-structure/set-matrix-zero/
 
-
  */
 
 import java.util.*;
-public class Q1_optimal {
+public class Q10_optimal {
 
     static ArrayList<ArrayList<Integer>> zeroMatrix(ArrayList<ArrayList<Integer>> matrix, int n, int m){
 
