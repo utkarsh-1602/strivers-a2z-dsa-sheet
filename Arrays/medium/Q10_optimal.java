@@ -81,7 +81,6 @@ public class Q10_optimal {
         return matrix;
     }
 
-
     public static void main(String[] args) {
 
         // The code snippet you provided declares an ArrayList named matrix, where each element in the ArrayList is itself an ArrayList of integers
