@@ -3,6 +3,7 @@ This repository contains DSA Questions and its Approaches from the SDE Striver s
 
 - Language used: Java
 
+
 ### Why to use java, if C++ is faster ? 
  
 1. Portability: Java programs are typically more portable than C++ programs because Java code is compiled into bytecode, which can run on any platform with a Java Virtual Machine (JVM).++ programs, on the other hand, compile directly into machine code, which may not be compatible across different architectures.
